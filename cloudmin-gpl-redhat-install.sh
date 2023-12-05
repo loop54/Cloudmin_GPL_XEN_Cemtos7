@@ -133,7 +133,7 @@ yum info kernel-xen >/dev/null 2>&1
 if [ "$?" != 0 ]; then
 	echo Enabling Xen kernel repo for CentOS 7 ..
 	yum install wget
-	yum install http://au1.mirror.crc.id.au/repo/kernel-xen-release-el7-latest.noarch.rpm
+	yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/centos-release-xen-412-8-7.el7.centos.x86_64.rpm
 	if [ "$?" != 0 ]; then
 		echo .. repo install failed
 		exit 1
